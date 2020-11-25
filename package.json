@@ -1,0 +1,33 @@
+{
+  "name": "asmgrinder.github.io",
+  "version": "1.0.0",
+  "description": "asmgrinder's page",
+  "main": "index.js",
+  "directories": {
+    "doc": "."
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "~/.gem/ruby/2.5.0/bin/bundle exec jekyll serve",
+    "predeploy": "JEKYLL_ENV=production ~/.gem/ruby/2.5.0/bin/bundle exec jekyll build",
+    "deploy": "gh-pages -d _site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asmgrinder/asmgrinder.github.io.git"
+  },
+  "keywords": [
+    "asteroid",
+    "unity",
+    "godot"
+  ],
+  "author": "asmgrinder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asmgrinder/asmgrinder.github.io/issues"
+  },
+  "homepage": "https://github.com/asmgrinder/asmgrinder.github.io#readme",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
