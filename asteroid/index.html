@@ -54,7 +54,7 @@ Normals for generated heightmap are calculated approximately and combined with t
 <code class="language-plaintext highlighter-rouge">Range</code> - Base heightmap scale.<br />
 <code class="language-plaintext highlighter-rouge">Metallic</code> - Metalic parameter of body.<br />
 <code class="language-plaintext highlighter-rouge">Smoothness</code> - Smoothness parameter of body.<br />
-<code class="language-plaintext highlighter-rouge">Denoise</code> - Level of denoising when rendering surface at angle (tradeoff between normals detalisation and visual artefacts). Depends on render scale.
+<code class="language-plaintext highlighter-rouge">Denoise</code> - Level of denoising when rendering surface at angle (tradeoff between normals detalisation and visual artefacts). Depends on render scale (URP settings).
  Weakens normals based on surface angle inside camera coordinate system.<br />
 <code class="language-plaintext highlighter-rouge">Start octave</code> - scaling of first level of generated noise.
 <code class="language-plaintext highlighter-rouge">Seed</code> - Random generator seed, changes generated heightmap and normals for body.<br />
@@ -74,11 +74,12 @@ Normals for generated heightmap are calculated approximately and combined with t
  Parameters of shader should be the same as parameters of material to obtain same surface otherwise rocks will be placed above or under the surface.</p>
 
 <p><code class="language-plaintext highlighter-rouge">Use mesh normals</code> in the script displaces geometry of mesh and recalculates mesh normals at Start() to make correct normals for shader’s ‘Use mesh normals’ and
- therefore requires read/write flag for the mesh to be set if turned on. Rocks can also be above or under the surface if geometry is not subdivided enough or if rocks are too small.</p>
+ therefore requires read/write flag for the mesh to be set in import parameters if turned on. Rocks can also be above or under the surface if geometry is not subdivided enough or if rocks are too small.</p>
 
 <h1 id="usage">Usage</h1>
 <p>Import subdivided enough (&gt; 6 times) icosphere. Create material based on material shader. Apply material to icosphere, select needed cubemaps and adjust material parameters.
- You can optionally attach script <code class="language-plaintext highlighter-rouge">stones.cs</code> to scene node if you want to use some of its functionality and/or mesh collider component.</p>
+ You can optionally attach script <code class="language-plaintext highlighter-rouge">stones.cs</code> to scene node if you want to use some of its functionality and/or mesh collider component.
+ Render scale equal to 2 (in URP parameters) lets you adjust denoiser to lower values without too much visual artifacts.</p>
 
 <h1 id="requirements">Requirements</h1>
 <p>Shader is rather lightweight, it runs in half of 1280x720 resolution on Intel HD Graphics 4600 and in 1366x768 on Intel HD Graphics 620.</p>
