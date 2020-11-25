@@ -63,13 +63,13 @@ cross platform frameworks (Unity, Godot engine, Urho3D).
 # Gallery
 
 <i>Procedural asteroid, value noise, 20+ octaves, Unity, realtime.</i><br/>
-![](images/scr5.png)
+![scr5.png](images/scr5.png)
 
-![](images/scr10.png)
+![scr10.png](images/scr10.png)
 
-![](images/scr4.png)
+![scr4.png](images/scr4.png)
 
-![](images/scr6.png)
+![scr6.png](images/scr6.png)
 
 <i>Procedural asteroid, value noise, 20+ octaves, Godot engine (texture shadows, auto exposure, tone mapping), realtime.</i><br/>
 Project: [https://github.com/asmgrinder/godotAsteroid/](https://github.com/asmgrinder/godotAsteroid/)<br/>
