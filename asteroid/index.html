@@ -50,7 +50,7 @@ Normals for generated heightmap are calculated approximately and combined with t
 
 <p><code class="language-plaintext highlighter-rouge">Albedo</code> - Cubemap with albedo of body.<br />
 <code class="language-plaintext highlighter-rouge">Tint</code> - Overall color of body.<br />
-<code class="language-plaintext highlighter-rouge">Heightmap</code> - Base heightmap of body (grayscaled cubemap).<br />
+<code class="language-plaintext highlighter-rouge">Heightmap</code> - Base heightmap of body (grayscale cubemap).<br />
 <code class="language-plaintext highlighter-rouge">Range</code> - Base heightmap scale.<br />
 <code class="language-plaintext highlighter-rouge">Metallic</code> - Metalic parameter of body.<br />
 <code class="language-plaintext highlighter-rouge">Smoothness</code> - Smoothness parameter of body.<br />
@@ -61,10 +61,10 @@ Normals for generated heightmap are calculated approximately and combined with t
 <code class="language-plaintext highlighter-rouge">Use mesh normals</code> - denoise is based on the normal in camera coordinate system. For lowpoly icosphere it can give better results for precalculated vertex displacement and recalculated normals.
  This parameter lets mix normals calculated by shader (for highly detailed geometry) and normals of used mesh.</p>
 
-<h1 id="compute-shader">Compute shader</h1>
+<h1 id="compute-shader-asteroidcompute">Compute shader (asteroid.compute)</h1>
 
-<p>Computes displaced position of surface and normal for sphere point. Requires _TexHeightmap (greyscaled cubemap),
- _StartOctave (int), _Range (float) and _Seed (float in range 0.000 .. 100.000).</p>
+<p>Computes displaced position of surface and normal for sphere point. Requires <code class="language-plaintext highlighter-rouge">_TexHeightmap</code> (greyscaled cubemap),
+ <code class="language-plaintext highlighter-rouge">_StartOctave</code> (int), <code class="language-plaintext highlighter-rouge">_Range</code> (float) and <code class="language-plaintext highlighter-rouge">_Seed</code> (float in range 0.000 .. 100.000).</p>
 
 <h1 id="script-stonescs">Script (stones.cs)</h1>
 
@@ -73,7 +73,11 @@ Normals for generated heightmap are calculated approximately and combined with t
  (pyramid-like prefab can be used to visualize asteroid normals in positions of rock instances).
  Parameters of shader should be the same as parameters of material to obtain same surface otherwise rocks will be placed above or under the surface.</p>
 
-<p><code class="language-plaintext highlighter-rouge">Use mesh normals</code> in the script displaces geometry of mesh and recalculates mesh normals at Start() to make correct normals for shader’s ‘Use mesh normals’ and
+<p><code class="language-plaintext highlighter-rouge">stonePrefab</code> - prefab for stone<br />
+<code class="language-plaintext highlighter-rouge">computeShader</code> - asteroid.compute<br />
+<code class="language-plaintext highlighter-rouge">cubemapHeightmap</code> - grayscale heightmap cubemap<br />
+<code class="language-plaintext highlighter-rouge">StartOctave</code>, <code class="language-plaintext highlighter-rouge">Range</code>, <code class="language-plaintext highlighter-rouge">Seed</code> - should be equal to material’s ones<br />
+<code class="language-plaintext highlighter-rouge">Use mesh normals</code> in the script displaces geometry of mesh and recalculates mesh normals at Start() to make correct normals for shader’s <code class="language-plaintext highlighter-rouge">Use mesh normals</code> and
  therefore requires read/write flag for the mesh to be set in import parameters if turned on. Rocks can also be above or under the surface if geometry is not subdivided enough or if rocks are too small.</p>
 
 <h1 id="usage">Usage</h1>
