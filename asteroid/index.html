@@ -90,8 +90,9 @@
  (bigger values on heightmap mean lower places on body so that abcence of base heightmap wouldn’t shrink body)
  and adjust material parameters. You can optionally attach <code class="language-plaintext highlighter-rouge">stones.cs</code>script to scene node if you want to use
  some of its functionality and/or mesh collider component. If so make sure that values of parameters that define
- body variant (<code class="language-plaintext highlighter-rouge">StartOctave</code>, <code class="language-plaintext highlighter-rouge">Range</code>, <code class="language-plaintext highlighter-rouge">Seed</code>) are the same as values of material parameters. Render scale equal
- to 2 (in URP parameters) lets you adjust denoiser to lower values without too much visual artifacts.</p>
+ body variant (<code class="language-plaintext highlighter-rouge">Cubemap heightmap</code>, <code class="language-plaintext highlighter-rouge">StartOctave</code>, <code class="language-plaintext highlighter-rouge">Range</code>, <code class="language-plaintext highlighter-rouge">Seed</code>) are the same as values of material parameters
+ and select <code class="language-plaintext highlighter-rouge">asteroid.compute</code> as compute shader for script. Render scale equal to 1.5..2 (in URP settings) lets
+ you adjust denoiser to lower values without too much visual artifacts.</p>
 
 <h1 id="video-tutorial">Video tutorial</h1>
 
