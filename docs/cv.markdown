@@ -55,10 +55,8 @@ piezoelectric probe parameters, «Thickness meter» application,
 application, «Locomotive detail checking».
 
 <i><b>Key skills</b></i><br/>
-C++11, knowlegde of Win32 API, Unity, Godot engine, basics
-of DirectX / OpenGL. Technical objects modelling in Blender.
-Knowledge of Windows / Ubuntu Linux / Gentoo Linux. Knowledge of
-cross platform frameworks (Unity, Godot engine, Urho3D).
+C++11, knowlegde of Win32 API, cross platform frameworks (Unity, Godot engine, Urho3D, OpenGL).
+ Technical objects modelling in Blender. Knowledge of Windows / Ubuntu Linux / Gentoo Linux.
 
 # Gallery
 
