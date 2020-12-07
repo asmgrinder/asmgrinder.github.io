@@ -63,8 +63,6 @@ cross platform frameworks (Unity, Godot engine, Urho3D).
 # Gallery
 
 <i>Procedural asteroid, value noise, 20+ octaves, Unity, realtime.</i><br/>
-![scr0.png](images/scr0.png)
-
 ![scr5.png](images/scr5.png)
 
 ![scr10.png](images/scr10.png)
@@ -73,17 +71,28 @@ cross platform frameworks (Unity, Godot engine, Urho3D).
 
 ![scr6.png](images/scr6.png)
 
-Video: [https://www.youtube.com/watch?v=eKzBZ45JezI](https://www.youtube.com/watch?v=eKzBZ45JezI)
-<video width="565" height="318" controls>
-  <source src="/video/asteroid.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+Video1: [https://www.youtube.com/watch?v=eKzBZ45JezI](https://www.youtube.com/watch?v=eKzBZ45JezI)
+<iframe width="565" height="318" src="https://www.youtube.com/embed/eKzBZ45JezI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<!--Video2: [https://www.youtube.com/watch?v=eKzBZ45JezI](https://www.youtube.com/watch?v=eKzBZ45JezI)
-<iframe width="565" height="318" src="https://www.youtube.com/embed/eKzBZ45JezI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+Video2: [https://www.youtube.com/watch?v=3gGy-nCB4Lk](https://www.youtube.com/watch?v=3gGy-nCB4Lk)
+<iframe width="565" height="318" src="https://www.youtube.com/embed/3gGy-nCB4Lk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<!--Video3: [https://www.youtube.com/watch?v=3gGy-nCB4Lk](https://www.youtube.com/watch?v=3gGy-nCB4Lk)
-<iframe width="565" height="318" src="https://www.youtube.com/embed/3gGy-nCB4Lk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+Video3: [https://www.youtube.com/embed/LG2fiORkHq8](https://www.youtube.com/embed/LG2fiORkHq8)<br/>
+<iframe width="565" height="318" src="https://www.youtube.com/embed/LG2fiORkHq8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<i>Procedural asteroid, value noise, 20+ octaves, Godot engine (texture shadows, auto exposure, tone mapping), realtime.</i><br/>
+Project: [https://github.com/asmgrinder/godotAsteroid/](https://github.com/asmgrinder/godotAsteroid/)<br/>
+![](images/godot_asteroid.png)
+
+Video: [https://www.youtube.com/watch?v=rMzyrzJRXeM](https://www.youtube.com/watch?v=rMzyrzJRXeM)<br/>
+<iframe width="565" height="318" src="https://www.youtube.com/embed/rMzyrzJRXeM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<i>Procedural asteroid, value noise, 20+ octaves, OpenGL/Urho3D, realtime.</i><br/>
+Project: [https://github.com/asmgrinder/glAsteroid](https://github.com/asmgrinder/glAsteroid/)<br/>
+![](images/gl_asteroid.png)
+
+Video: [https://www.youtube.com/watch?v=rx2Aa9UDQPo](https://www.youtube.com/watch?v=rx2Aa9UDQPo)<br/>
+<iframe width="565" height="288" src="https://www.youtube.com/embed/rx2Aa9UDQPo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <i>Space station render (Blender, Cycles)</i><br/>
 ![](images/hypercube_space_station.png)
