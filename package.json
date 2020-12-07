@@ -27,7 +27,7 @@
     "url": "https://github.com/asmgrinder/asmgrinder.github.io/issues"
   },
   "homepage": "https://github.com/asmgrinder/asmgrinder.github.io#readme",
-  "dependencies": {
+  "devDependencies": {
     "gh-pages": "^3.1.0"
   }
 }
